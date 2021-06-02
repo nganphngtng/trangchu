@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Rouge</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section id="language">
+        <div class="container d-flex j-between">
+            <span class="f-lang">Tiếng Việt</span>
+            <span><i class="fas fa-times"></i></span>
+        </div>
+    </section>
+    <section id="navbar">
+        <div class="container d-flex j-between a-center">
+            <img src="https://viducosmetics.com/wp-content/uploads/2019/08/Black-Rouge-logo.png" width="100px" height="100px" alt="">
+            <ul class="nav d-flex">
+                <li class="nav-item"><a href="">Trang chủ</a></li>
+                <li class="nav-item"><a href="">|</a></li>
+                <li class="nav-item"><a href="">Sản phẩm</a></li>
+                <li class="nav-item"><a href="">|</a></li>
+                <li class="nav-item"><a href="">Khuyến mại</a></li>
+                <li class="nav-item"><a href="">|</a></li>
+                <li class="nav-item"><a href="">Giới thiệu</a></li>
+                <li class="nav-item"><a href="">|</a></li>
+                <li class="nav-item"><a href="">Tin tức</a></li>
+                <li class="nav-item"><i class="fas fa-search"></i></li>
+            </ul>
+        </div>
+    </section>
+    <section id="main-heading">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="https://dep365.com/wp-content/uploads/2019/11/img_5dbfbcd0e4393.jpg" style="width: 100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="https://bloganchoi.com/wp-content/uploads/2020/11/son-black-rouge-ver-7.jpg" style="width: 100%">                
+            </div>
+            <div class="mySlides fade">              
+                <img src="https://linkstore.com.vn/wp-content/uploads/2020/06/Son-Black-Rouge-Air-Fit-Velvet-Tint-Ver-6-Blueming-Garden-13.jpg" style="width: 100%">               
+            </div>
+            <div class="mySlides fade">
+                <img src="https://vanshop.com.vn/wp-content/uploads/2019/12/BLR5.jpeg8_.jpg" style="width: 100%">                
+            </div>
+            <div class="mySlides fade">
+                <img src="https://i.ytimg.com/vi/ulHuu09knr4/maxresdefault.jpg" style="width: 100%;">                
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#60;</a>
+            <a class="next" onclick="plusSlides(1)">&#62;</a>
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+
+        <script>
+            var slideIndex = 0;
+
+            function showSlides(){
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                for(i = 0; i < slides.length; i++){
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if(slideIndex > slides.length){
+                    slideIndex = 1; 
+                }
+                slides[slideIndex - 1].style.display ="block";
+                setTimeout(showSlides, 3000);
+            }
+            showSlides();
+        </script>
+    </section>
+
+    <section id="sp">
+        <h3>SẢN PHẨM</h3>
+        <div class="twoheading-container d-flex j-between">
+            <div class="moi">
+                <img src="./image/sonmoi.png" alt="">
+                <h4><a href="">Son môi</a></h4>
+            </div>
+
+            <div class="phannuoc">
+                <img src="./image/phannuoc.png" alt="">
+                <h4><a href="">Phấn nước</a></h4>
+            </div>
+
+            <div class="phanmat">
+                <img src="./image/phanmat.png" alt="">
+                <h4><a href="">Phấn mắt</a></h4>
+            </div>
+
+            <div class="sunscreen">
+                <img src="./image/sunscreen.png" alt="">
+                <h4><a href="">Kem chống nắng</a></h4>
+            </div>
+
+            <div class="cleanser">
+                <img src="./image/face-cleanser.png" alt="">
+                <h4><a href="">Sữa rửa mặt</a></h4>
+            </div>
+        </div>
+    </section>
+
+    <section id="banner">
+        <div class="threeheading-container d-flex j-between">
+            <img src="./image/Black Rouge Banner.png" style="width: 100%">
+        </div>
+    </section>
+
+    <section id="bestseller">
+        <div>
+            <h3>BEST SELLER</h3>
+        </div>
+        <div class="fourheading-container d-flex j-between">
+            <div class="ver7">
+                <img src="https://img.watsonsvn.com/trading/td/DMC/Blackrouge-Ver7-19-10-2020/8809464342624-front.jpg" style="width: 100%">
+                <h5>Son Black Rouge Air Fit Velvet</h5>
+                <h5>Tint Ver 7 Sunset Crown</h5>           
+                <p><a href="">&#9829; HOT ITEM</a></p>
+            </div>
+
+            <div class="ver7">
+                <img src="https://kyo.vn/wp-content/uploads/2020/03/Son-Black-Rouge-A06.jpg" style="width: 100%">
+                <h5>Son Black Rouge Air Fit Velvet</h5>
+                <h5>Tint Brick Red</h5>
+                <p><a href="">&#9733; BEST OF THE SEASON</a></p>
+            </div>
+
+            <div class="ver7">
+                <img src="http://product.hstatic.net/200000135107/product/rsz_black_rouge_crystal_heart_lock_shadow__1__d1de4f2640aa489f8d47f5610f7b206c_grande.png" style="width: 100%">
+                <h5>Black Rouge Crystal Heart</h5>
+                <h5>Lock Shadow</h5>
+                <p><a href="">&#10152; SALE UP TO 20%</a></p>
+            </div> 
+        </div>
+    </section>
+    <section id="footer">
+        <div class="container">
+            <div class="row d-flex">
+                <div class="col">
+                    <img src="https://viducosmetics.com/wp-content/uploads/2019/08/Black-Rouge-logo.png" width="100px" height="100px" alt="">
+                </div>
+                <div class="col">
+                    <ul>
+                        <li>Thương hiệu</li>
+                        <li>Black Rouge Vietnam</li>
+                        <li>Địa chỉ công ty: Tầng 10, 194 Golden Building, 473 Điện Biên Phủ, Phường 25, Bình Thạnh, Hồ Chí Minh</li>
+                    </ul>
+                </div>
+                <div class="col">                    
+                    <ul>
+                        <li>Chính sách</li>
+                        <li><a href="">Chính sách quy định chung</a></li>
+                        <li><a href="">Chính sách bảo mật</a></li>
+                        <li><a href="">Chính sách đổi trả và hoàn tiền</a></li>
+                        <li><a href="">Chính sách vận chuyển và giao nhận</a></li>
+                        <li><a href="">Quy định và hình thức thanh toán</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul>
+                        <li>Liên hệ</li>
+                        <li>Hotline |<a href="">0909 312 3550</a></li>
+                        <li>Email support |<a href="">cskh&#64;dmnc.vn Or blackrougevn&#64;gmail.com</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul class="d-flex j-between">
+                        <li class="f-item fa-circle"><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="f-item in-circle"><a href=""><i class="fab fa-instagram"></i></a></li>
+                        <li class="f-item yt-circle"><a href=""><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                    <img src="https://www.bbia.vn/wp-content/uploads/2021/04/logoSaleNoti.png" style="width: 100%">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="footerr">
+        <div class="fiveheading-container">
+            <p class="bl">Copyright © 2021 DM&C. All rights reserved.</p>
+        </div>
+    </section>
+</body>
+</html>
